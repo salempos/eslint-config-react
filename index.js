@@ -1,11 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "airbnb/hooks"],
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
-    mocha: true,
-  },
+  extends: ["eslint-config-airbnb", "eslint-config-airbnb/hooks"].map(require.resolve),
   rules: {
     quotes: ["error", "double"],
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
