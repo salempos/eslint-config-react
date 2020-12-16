@@ -1,17 +1,19 @@
 {
-  "name": "@salempos/eslint-config-react",
-  "version": "1.0.3",
-  "description": "ESLint config for SalemPOS React apps",
+  "name": "@salempos/eslint-config",
+  "version": "1.0.4",
+  "description": "ESLint config for SalemPOS apps",
   "main": "index.js",
+  "files": ["index.js", "react.js"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salempos/eslint-config-react.git"
+    "url": "git+https://github.com/salempos/eslint-config.git"
   },
   "dependencies": {
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-webpack": "^0.13.0"
   },
   "peerDependencies": {
@@ -28,7 +30,7 @@
   "author": "Almas Sapargali",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/salempos/eslint-config-react/issues"
+    "url": "https://github.com/salempos/eslint-config/issues"
   },
-  "homepage": "https://github.com/salempos/eslint-config-react#readme"
+  "homepage": "https://github.com/salempos/eslint-config#readme"
 }
