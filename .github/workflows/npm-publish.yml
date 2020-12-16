@@ -14,17 +14,11 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 10.0.0
-    - name: Install dependencies
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: install
-    - name: Publish package
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: publish
-        registry-url: npm.pkg.github.com
-        auth-token: ${{ secrets.GITHUB_TOKEN }}
+        registry-url: 'https://npm.pkg.github.com'
+    - run: yarn install
+    - run: yarn publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # https://github.community/t5/GitHub-Actions/Workflow-is-failing-if-no-job-can-be-ran-due-to-condition/m-p/38186#M3250
   always_job:
