@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "airbnb/hooks"],
+  extends: ["react-app", "airbnb"],
   rules: {
     quotes: ["error", "double"],
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
@@ -28,7 +28,7 @@ module.exports = {
       webpack: {
         config: {
           resolve: {
-            modules: ["node_modules"],
+            modules: ["node_modules", "src"],
           },
         },
       },
